@@ -13,7 +13,7 @@ window.onscroll = function () {
     document.getElementById("navgationbar").style.backgroundColor = "#303849";
     document.getElementById("navgationbar").style.opacity = "0.95";
   } else {
-    document.getElementById("navgationbar").style.top = "57px";
+    document.getElementById("navgationbar").style.top = "27px";
     document.getElementById("navgationbar").style.backgroundColor =
       "transparent";
   }
