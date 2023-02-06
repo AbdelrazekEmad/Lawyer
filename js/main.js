@@ -10,58 +10,69 @@ window.onscroll = function () {
   // change navbar visabilty
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navgationbar").style.top = "0px";
-    document.getElementById("navgationbar").style.backgroundColor = "#303849";
     document.getElementById("navgationbar").style.opacity = "0.95";
-  } else {
-    document.getElementById("navgationbar").style.top = "27px";
-    document.getElementById("navgationbar").style.backgroundColor =
-      "transparent";
+} else {
+    document.getElementById("navgationbar").style.top = "40px";
+    document.getElementById("navgationbar").style.opacity = "1";
   }
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
+  //       console.log(el);
+  //     });
+  //   }
 
   // change scroll to top btn visabilty
-  if (document.documentElement.scrollTop > 200) {
-    document.getElementById("scroll-top").style.display = "block";
-  } else {
-    document.getElementById("scroll-top").style.display = "none";
-  }
+  //   if (document.documentElement.scrollTop > 200) {
+  //     document.getElementById("scroll-top").style.display = "block";
+  //   } else {
+  //     document.getElementById("scroll-top").style.display = "none";
+  //   }
 };
 
-// cheap of dots for slider
-$(".owl-carousel-hero .owl-dot span").css({
-  background: "white",
-  width: "5px",
-  height: "20px",
-});
+// window.onload = function () {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
+//       console.log(el);
+//     });
+//   }
+// };
 
-$(".owl-carousel-testimonial .owl-dot span").css({
-  background: "white",
-  width: "20px",
-  height: "5px",
-});
+// // cheap of dots for slider
+// $(".owl-carousel-hero .owl-dot span").css({
+//   background: "white",
+//   width: "5px",
+//   height: "20px",
+// });
 
-jQuery("#animated-thumbnails-gallery")
-  .justifiedGallery({
-    captions: false,
-    lastRow: "hide",
-    rowHeight: 180,
-    margins: 5,
-    download: false,
-  })
-  .on("jg.complete", function () {
-    window.lightGallery(
-      document.getElementById("animated-thumbnails-gallery"),
-      {
-        autoplayFirstVideo: false,
-        pager: false,
-        galleryId: "nature",
-        plugins: [lgThumbnail],
-        download: false,
-        mobileSettings: {
-          controls: false,
-          showCloseIcon: false,
-          download: false,
-          rotate: false,
-        },
-      }
-    );
-  });
+// $(".owl-carousel-testimonial .owl-dot span").css({
+//   background: "white",
+//   width: "20px",
+//   height: "5px",
+// });
+
+// jQuery("#animated-thumbnails-gallery")
+//   .justifiedGallery({
+//     captions: false,
+//     lastRow: "hide",
+//     rowHeight: 180,
+//     margins: 5,
+//     download: false,
+//   })
+//   .on("jg.complete", function () {
+//     window.lightGallery(
+//       document.getElementById("animated-thumbnails-gallery"),
+//       {
+//         autoplayFirstVideo: false,
+//         pager: false,
+//         galleryId: "nature",
+//         plugins: [lgThumbnail],
+//         download: false,
+//         mobileSettings: {
+//           controls: false,
+//           showCloseIcon: false,
+//           download: false,
+//           rotate: false,
+//         },
+//       }
+//     );
+//   });
