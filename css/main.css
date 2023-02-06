@@ -3,7 +3,7 @@
   --secound-color: #eaa636;
   --overlay-color: rgb(26, 32, 46, 0.7);
   --section-bg-color: #f7f8f8;
-  --muted-color: #6c757d;
+  --text-color: #606060;
   --main-transition: 0.4s;
   --ffamily-atoun: "Anton", sans-serif;
 }
@@ -17,7 +17,6 @@ html {
 }
 body {
   font-family: "Jost", sans-serif;
-  background-color: #000;
   height: 1000vh;
 }
 a {
@@ -30,8 +29,11 @@ ul {
 .main__color {
   color: var(--main-color);
 }
-.section__color {
+.secound__color {
   color: var(--secound-color);
+}
+.text-color {
+  color: var(--text-color);
 }
 .main-icon {
   color: var(--main-color);
@@ -71,6 +73,14 @@ ul {
   height: calc(1.5rem + 1.75vw);
   line-height: calc(1.5rem + 1.75vw);
   left: 0;
+}
+.headding-dash::after {
+  content: "";
+  display: block;
+  background-color: var(--secound-color);
+  height: 2px;
+  width: 100px;
+  margin-top: 1rem;
 }
 /* Start Upperbar  */
 .upperbar {
@@ -145,7 +155,8 @@ ul {
   box-shadow: 2px 2px 30px 0px rgb(0 0 0 / 20%);
 }
 .info__content i {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
 }
 .info__content::before {
   font: var(--fa-font-solid);
@@ -168,4 +179,37 @@ ul {
 }
 .info-section .col:hover .info__content::before {
   transform: rotate(-30deg);
+}
+
+/* Start values  */
+.values {
+  background-color: var(--main-color);
+}
+.values__box {
+  display: flex;
+  flex-direction: column;
+}
+.values__box span {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0.5rem 0;
+}
+.values__box i {
+  font-size: 2rem;
+  margin-inline-end: 1rem;
+  color: var(--secound-color);
+}
+
+/* Start achieved */
+.achieved {
+  background-image: url(../img/14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 7rem;
+}
+.achieved__content h2 {
+  color: white !important;
 }
