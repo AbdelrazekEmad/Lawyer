@@ -346,3 +346,15 @@ footer {
     flex-direction: column;
   }
 }
+
+.service__list li {
+  margin-bottom: 0.5rem;
+}
+.service__list li::before {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  padding: 0.25rem;
+  background-color: var(--main-color);
+  color: var(--secound-color);
+  margin-inline-end: 0.5rem;
+}
