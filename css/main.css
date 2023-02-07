@@ -57,7 +57,11 @@ ul {
   font-weight: bold;
   text-transform: capitalize;
 }
-#scroll-top {
+.main-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.main-btn:hover #scroll-top {
   z-index: 100;
   bottom: 0.5rem;
   right: 1rem;
@@ -84,22 +88,13 @@ ul {
   width: 100px;
   margin-top: 1rem;
 }
-/* Start Upperbar  */
-.upperbar {
-  background-color: rgb(36, 46, 63);
-  z-index: 10;
-}
-.upperbar a {
-  font-size: 12px;
-}
 /* Start navbar  */
 .navgationbar {
   z-index: 100;
   transition: all 0.2s;
-  top: 40px;
+  top: 0;
   background-color: white;
 }
-
 .nav-item .active {
   color: var(--secound-color) !important;
 }

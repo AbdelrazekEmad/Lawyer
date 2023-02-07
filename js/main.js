@@ -6,29 +6,19 @@ function topFunction() {
 }
 
 // show and hide navbar and scroll to top btn when scrolling
-window.onscroll = function () {
-  // change navbar visabilty
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navgationbar").style.top = "0px";
-    document.getElementById("navgationbar").style.opacity = "0.95";
-} else {
-    document.getElementById("navgationbar").style.top = "40px";
-    document.getElementById("navgationbar").style.opacity = "1";
-  }
-  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
-  //       console.log(el);
-  //     });
-  //   }
+// window.onscroll = function () {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
+//       console.log(el);
+//     });
+//   }
 
-  // change scroll to top btn visabilty
-  //   if (document.documentElement.scrollTop > 200) {
-  //     document.getElementById("scroll-top").style.display = "block";
-  //   } else {
-  //     document.getElementById("scroll-top").style.display = "none";
-  //   }
-};
-
+// change scroll to top btn visabilty
+//   if (document.documentElement.scrollTop > 200) {
+//     document.getElementById("scroll-top").style.display = "block";
+//   } else {
+//     document.getElementById("scroll-top").style.display = "none";
+//   }
 // window.onload = function () {
 //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 //     document.querySelectorAll(".collapse .nav-link").forEach((el) => {

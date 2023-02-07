@@ -15,23 +15,24 @@ $(".owl-carousel-hero").owlCarousel({
   },
 });
 
-$(".owl-carousel-testimonial").owlCarousel({
+$(".owl-carousel-testimonials").owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 30,
   nav: false,
-  navSpeed: 500,
+  dots: false,
   autoplay: true,
-  autoplaySpeed: 650,
   animateOut: "fadeOut",
+  animateIn: "fadeIn",
+  autoplaySpeed: 6000,
   rtl: true,
   responsive: {
     0: {
       items: 1,
     },
-    1000: {
+    600: {
       items: 2,
     },
-    1500: {
+    1000: {
       items: 3,
     },
   },
