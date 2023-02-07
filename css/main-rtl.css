@@ -14,3 +14,6 @@ p,
 span {
   font-family: var(--font-family-Ar);
 }
+.why-us__image {
+  right: 0;
+}

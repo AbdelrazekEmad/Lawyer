@@ -4,65 +4,22 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// Start Features Tabs
+let tabs = document.querySelectorAll(".features__tabs");
+let tabsArray = Array.from(tabs);
+let contentBlocks = document.querySelectorAll(".features__info");
+let contentBlocksArray = Array.from(contentBlocks);
 
-// show and hide navbar and scroll to top btn when scrolling
-// window.onscroll = function () {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
-//       console.log(el);
-//     });
-//   }
-
-// change scroll to top btn visabilty
-//   if (document.documentElement.scrollTop > 200) {
-//     document.getElementById("scroll-top").style.display = "block";
-//   } else {
-//     document.getElementById("scroll-top").style.display = "none";
-//   }
-// window.onload = function () {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.querySelectorAll(".collapse .nav-link").forEach((el) => {
-//       console.log(el);
-//     });
-//   }
-// };
-
-// // cheap of dots for slider
-// $(".owl-carousel-hero .owl-dot span").css({
-//   background: "white",
-//   width: "5px",
-//   height: "20px",
-// });
-
-// $(".owl-carousel-testimonial .owl-dot span").css({
-//   background: "white",
-//   width: "20px",
-//   height: "5px",
-// });
-
-// jQuery("#animated-thumbnails-gallery")
-//   .justifiedGallery({
-//     captions: false,
-//     lastRow: "hide",
-//     rowHeight: 180,
-//     margins: 5,
-//     download: false,
-//   })
-//   .on("jg.complete", function () {
-//     window.lightGallery(
-//       document.getElementById("animated-thumbnails-gallery"),
-//       {
-//         autoplayFirstVideo: false,
-//         pager: false,
-//         galleryId: "nature",
-//         plugins: [lgThumbnail],
-//         download: false,
-//         mobileSettings: {
-//           controls: false,
-//           showCloseIcon: false,
-//           download: false,
-//           rotate: false,
-//         },
-//       }
-//     );
-//   });
+tabsArray.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    tabsArray.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+    contentBlocksArray.forEach((block) => {
+      block.style.display = "none";
+    });
+    document.querySelector(e.currentTarget.dataset.btn).style.display = "block";
+  });
+});
+// End Features Tabs
