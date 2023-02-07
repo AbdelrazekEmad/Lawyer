@@ -14,45 +14,24 @@ $(".owl-carousel-hero").owlCarousel({
   },
 });
 
-$(".owl-carousel-testimonial").owlCarousel({
+$(".owl-carousel-testimonials").owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 30,
   nav: false,
-  navSpeed: 500,
+  dots: false,
   autoplay: true,
-  autoplaySpeed: 650,
   animateOut: "fadeOut",
+  animateIn: "fadeIn",
+  autoplaySpeed: 6000,
   responsive: {
     0: {
       items: 1,
     },
-    1000: {
+    600: {
       items: 2,
     },
-    1500: {
+    1000: {
       items: 3,
-    },
-  },
-});
-
-$(".owl-carousel-partnars").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  dots: false,
-  navSpeed: 500,
-  autoplay: true,
-  autoplaySpeed: 650,
-  animateOut: "fadeOut",
-  responsive: {
-    0: {
-      items: 2,
-    },
-    1000: {
-      items: 4,
-    },
-    1500: {
-      items: 6,
     },
   },
 });
