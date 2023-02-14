@@ -126,6 +126,9 @@ ul {
   background-color: transparent;
   border: 0;
 }
+.navbar-brand {
+  transform: scale(1.7);
+}
 /* Start Slider  */
 .owl-carousel-hero .item {
   height: 95vh;
